@@ -1,0 +1,17 @@
+.card {
+  margin-right: 40px;
+  margin-left: 40px;
+  width: 126px;
+}
+
+.img {
+  width: 100%;
+  height: 168px;
+  border-radius: 10px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  flex-flow: nowrap;
+}
