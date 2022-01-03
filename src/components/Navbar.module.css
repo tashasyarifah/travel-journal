@@ -1,0 +1,19 @@
+.nav {
+  background-color: #f55a5a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+  gap: 10px;
+}
+
+.logo {
+  width: 24px;
+  filter: #918e9b;
+}
+
+h1 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
