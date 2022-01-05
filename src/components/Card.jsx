@@ -1,18 +1,18 @@
 import styles from "./Card.module.css"
 
-export default function Card() {
+export default function Card(props) {
     return (
         <div className={styles.card}>
-            <img src="./images/Mount-fuji.jpg" alt="Mount Fuji, Japan" className={styles.img}/>
+            <img src={`../images/${props.image}`} alt="The destination" className={styles.img}/>
             <div className={styles.info}>
-                <div>
+                <div className={styles.locations}>
                     <img src="./images/Location.svg" alt="" />
-                    <span>Japan</span>
-                    <span>View on Google Maps</span>
+                    <span>{props.title}</span>
+                    <span>{props.googleMapsUrl}</span>
                 </div>
-                <h2>Mount Fuji</h2>
-                <p>12 Jan 2021 - 24 Jan 2021</p>
-                <p>Mount Fuji is the tallest mountain in Japan, standing at 3,776 meters (12,380 feet). Mount Fuji is the single most popular tourist site in Japan, for both Japanese and foreign tourists.</p>
+                <h2>{props.title}</h2>
+                <p>{props.startDate} - {props.endDate}</p>
+                <p>{props.description}</p>
             </div>
             
         </div>
