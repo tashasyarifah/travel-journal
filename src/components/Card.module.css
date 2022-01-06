@@ -1,24 +1,54 @@
 .card {
-  margin: 2.8125rem 2.5rem;
   display: flex;
-  flex-wrap: wrap;
+  padding: 0 1.4rem 1.4rem 1.4rem;
+  flex-direction: column;
   align-items: center;
   align-content: center;
   justify-content: center;
 }
 
+@media (min-width: 720px) {
+  .card {
+    flex-direction: row;
+  }
+}
+
 .img {
-  height: 168px;
+  height: 250px;
   border-radius: 10px;
-  width: 126px;
+  width: 250px;
+  object-fit: cover;
 }
 
 .info {
-  font-size: 0.75em;
+  padding-top: 0.5rem;
 }
 
 .locations {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 0.5rem;
+}
+
+.icon {
+  width: 0.7rem;
+}
+
+.country {
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  padding: 0.5rem 0;
+}
+
+.date {
+  padding-bottom: 0.3rem;
+}
+
+.description {
+  text-align: justify;
+  line-height: 1.6;
 }
