@@ -41,14 +41,21 @@
 }
 
 h2 {
-  padding: 0.5rem 0;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  letter-spacing: 0.1rem;
 }
 
 .date {
-  padding-bottom: 0.3rem;
+  padding-bottom: 0.5rem;
+  font-weight: 600;
 }
 
 .description {
   text-align: justify;
   line-height: 1.6;
+}
+
+.url {
+  color: #918e9b;
 }
