@@ -1,0 +1,24 @@
+.footer {
+  background-color: rgb(139, 139, 245);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+  padding: 1.25rem;
+}
+
+.link {
+  text-decoration: underline;
+  text-transform: none;
+  color: black;
+  cursor: pointer;
+}
+
+.link:focus,
+.link:hover {
+  color: rgb(218, 253, 253);
+}
+
+.attribution {
+  font-size: 0.8em;
+}
