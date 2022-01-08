@@ -2,12 +2,12 @@ import styles from "./Card.module.css"
 
 export default function Card(props) {
     return (
-        <section>
+        <section className={styles.cards}>
             <div className={styles.card}>
-                <img src={`../images/${props.image}`} alt="" className={styles.img}/>
+                <img src={`../images/${props.image}`} alt={props.altImage} className={styles.img}/>
                 <section className={styles.info}>
                     <section className={styles.locations}>
-                        <img src="./images/Location.svg" alt={props.altImage} className={styles.icon}/>
+                        <img src="./images/Location.svg" alt="" className={styles.icon}/>
                         <span className={styles.country}>{props.location}</span>
                         <a target="_blank" rel="noopener noreferrer" href={props.googleMapsUrl} className={styles.url}>View in Google Maps</a>
                     </section>
