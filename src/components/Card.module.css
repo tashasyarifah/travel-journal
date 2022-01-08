@@ -1,16 +1,10 @@
 .card {
   display: flex;
-  padding: 1.4rem;
+  padding: 2.5rem;
   flex-direction: column;
   align-items: center;
   align-content: center;
   justify-content: center;
-}
-
-@media (min-width: 720px) {
-  .card {
-    flex-direction: row;
-  }
 }
 
 .img {
@@ -57,7 +51,7 @@ h2 {
 }
 
 .url {
-  color: #918e9b;
+  color: #59575f;
   cursor: pointer;
 }
 
@@ -67,6 +61,85 @@ h2 {
 }
 
 hr {
-  border: 1px solid #f5f5f5;
-  height: fit-content;
+  border: 1px solid #e5e5e5;
+  margin: auto;
+  width: 88%;
+}
+
+@media screen and (min-width: 600px) {
+  .img {
+    width: 400px;
+  }
+  .description {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .cards {
+    width: 601px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    flex-direction: row;
+    padding: 2.5rem 4rem;
+  }
+
+  .img {
+    width: 200px;
+  }
+
+  .info {
+    padding-top: 0;
+    text-align: left;
+    padding-left: 2rem;
+  }
+
+  .locations {
+    justify-content: left;
+  }
+
+  .description {
+    padding: 0;
+    text-align: left;
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .cards {
+    width: 901px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card {
+    padding: 3rem 10rem;
+  }
+
+  .description {
+    width: 96%;
+  }
+
+  .icon {
+    width: 0.5rem;
+  }
+
+  hr {
+    width: 73%;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .cards {
+    width: 1201px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
